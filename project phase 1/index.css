@@ -1,0 +1,151 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+   
+    
+}
+
+/* Body and Container */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(https://media.istockphoto.com/id/471745566/photo/vintage-old-books-on-shelf-isolated-white.jpg?s=612x612&w=0&k=20&c=m5MmbiKijmA_QZ1KMc8YL-scCpzk-MadnysIDS1k3dU=);
+}
+
+#container {
+    background-color: silver;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(10, 0, 0, 0.1);
+    width: 800px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1em;
+    color: #291b1b;
+}
+
+/* Search Section */
+#searchBox {
+    display: flex;
+    margin-bottom: 0;
+}
+
+#searchBox input {
+    padding: 10px;
+    width: 500px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+#searchBox button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#searchBox button:hover {
+    background-color: green;
+}
+
+/* Results Section */
+#results {
+    margin-top: 20px;
+}
+
+#results p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Library Section */
+#library {
+    margin-top: 30px;
+}
+
+#libraryButton {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#libraryButton button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#libraryButton button:hover {
+    background-color: blue;
+}
+
+/* List Section for Currently Reading and Done Reading */
+#currentlyReading, #done {
+    margin-bottom: 30px;
+}
+
+#currentlyReading input, #done input {
+    padding: 10px;
+    width: 500px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#currentlyReading button, #done button {
+    padding: 10px;
+    background-color: #FF5722;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#currentlyReading button:hover, #done button:hover {
+    background-color: rgb(161, 62, 26);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background-color: #e1f5fe;
+    border-radius: 4px;
+}
+
+/* Clear Button */
+#clear button {
+    padding: 10px;
+    background-color: #FFC107;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#clear button:hover {
+    background-color: #ffb300;
+}
+#doneReadingList{
+    text-decoration: line-through;
+}

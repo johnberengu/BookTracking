@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracking</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container">
+        <h1><p>BookTracking</p></h1>
+
+        <!-- Search input and button -->
+        <div id="searchBox">
+            <input type="text" placeholder="Search for a book">
+            <button onclick="performSearch()">Search</button>
+        </div>
+
+        <div id="results"></div>
+
+        <!-- library button -->
+        <div id="libraryButton">
+            <button onclick="showLibrary()">My Library</button>
+        </div>
+
+        <div id="library" style="display: none;">
+
+            <div id="currentlyReading">
+                <h1><p>Currently reading books</p></h1>
+                <input type="text" placeholder="Add book" id="currentlyReadingInput">
+                <button id="addCurrentBookBtn">Add</button>
+                <ul id="currentlyReadingList"></ul>
+            </div>
+             <!-- clear books currently reading button -->
+            <div id="clear">
+                <button id="clearBooksCurrentlyReading">Clear</button>
+            </div>
+            
+            <!-- Input to add books that you are done reading -->
+            <div id="done">
+                <h1><p>Done reading</p></h1>
+                <input type="text" placeholder="Add book" id="doneReadingInput">
+                <button id="addDoneBookBtn">Add</button>
+                <ul id="doneReadingList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
