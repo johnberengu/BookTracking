@@ -161,3 +161,50 @@ form input{
     border-radius: 4px;
 
 }
+
+/* Style for the favorite button (Add to Favorites) */
+.favorite-btn {
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    padding: 8px 16px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+/* Hover effect for the favorite button */
+.favorite-btn:hover {
+    background-color: darkblue; 
+}
+
+/* Style for the delete button */
+.delete-btn {
+    background-color: blue; 
+    color: white;
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    font-size: 12px; 
+    border-radius: 5px; 
+    margin-left: 10px; 
+}
+
+/* Hover effect for the delete button */
+.delete-btn:hover {
+    background-color: darkblue; 
+}
+
+/* Styling for the favorites list */
+#favoritesList {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+/* Styling for each favorite item */
+.favorite-item {
+    margin: 10px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
