@@ -147,3 +147,17 @@ ul li {
 #doneReadingList{
     text-decoration: line-through;
 }
+
+form button{
+    border-radius: 4px;
+    background-color: rgb(2, 2, 248);
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #0a1792;
+}
+form input{
+    border-radius: 4px;
+
+}

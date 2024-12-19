@@ -1,6 +1,6 @@
 // Search function to fetch data from Google Books API
 performSearch = () => {
-    const searchInput = document.querySelector("#searchBox input");
+    const searchInput = document.querySelector("#searchBox input"); 
     const searchBox = searchInput.value.trim(); // Get the trimmed value of the input
 
     const results = document.getElementById("results"); // Results container
@@ -11,7 +11,7 @@ performSearch = () => {
         return;
     }
 
-    results.innerHTML = "<p>Loading...</p>"; // Show loading message
+    results.innerHTML = "<p>Loading...</p>"; 
 
     // Fetch data from Google Books API
     const URL = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchBox)}`;
@@ -120,3 +120,28 @@ document.getElementById('clearBooksCurrentlyReading').addEventListener('click',f
     currentInput.value = '';
     currentlyReadingList.innerHTML = '';
 })
+// Adding event listener for the search input field to fetch data as user types
+document.getElementById('searchBox').querySelector('input').addEventListener('keyup', function(event) {
+    const searchBox = event.target.value.trim(); // Get the trimmed value of the input
+
+    if (searchBox.length > 0) {
+        performSearch(); 
+    } else {
+        document.getElementById("results").innerHTML = ""; // Clear results if input is empty
+    }
+});
+
+// Adding event listener for the feedback form submission
+document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const feedbackInput = document.getElementById('feedbackInput').value.trim(); 
+
+    if (feedbackInput) {
+        alert('Thank you for your feedback: ' + feedbackInput); 
+
+        document.getElementById('feedbackInput').value = '';
+    } else {
+        alert("Please enter feedback before submitting.");
+    }
+});
